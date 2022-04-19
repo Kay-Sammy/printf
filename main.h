@@ -20,6 +20,7 @@ typedef struct print
 } print_t;
 
 int _printf(const char *format, ...);
+int _putchar(char c);
 int print_prg(va_list __attribute__((unused)), char *, unsigned int);
 int print_chr(va_list arguments, char *buf, unsigned int ibuf);
 int print_str(va_list arguments, char *buf, unsigned int ibuf);
@@ -58,4 +59,4 @@ char *fill_long_oct_array(char *bnr, char *oct);
 char *fill_short_oct_array(char *bnr, char *oct);
 char *fill_hex_array(char *bnr, char *hex, int isupp, int limit);
 
-#endif
+#endif /*MAIN_H*/
